@@ -1,0 +1,24 @@
+{
+  "name": "bill-tracker-api",
+  "version": "1.0.0",
+  "description": "Generic multi-provider utility bill tracker (electricity, gas, water) for Pakistan",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrate": "node src/db/migrate.js",
+    "seed": "node src/db/seed_providers.js",
+    "scrape": "node src/services/scraper.service.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.3.0",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.28.1",
+    "@fastify/cors": "^9.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^3.0.3"
+  }
+}
