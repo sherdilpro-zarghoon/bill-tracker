@@ -42,7 +42,7 @@ for (const p of defaultProviders) {
   if (existing.includes(p.name)) continue;
   insert.run({
     ...p,
-    base_url: `https://REPLACE_WITH_OFFICIAL_URL/${p.name.toLowerCase().replace(/\s+/g, '-')}?ref={consumer_id}`,
+    base_url: `https://bill.pitc.com.pk/fescobill/${p.name.toLowerCase().replace(/\s+/g, '-')}?ref={consumer_id}`,
   });
   inserted++;
 }
